@@ -61,11 +61,11 @@ class deviceManipulation {
 		//$con->close();
 		
 		/* send registration_notify to APP */
-		$this->registrationNotify($type, $vendor, $mac, $bssid, $uuid, $status);
+		$this->registrationNotify($type, $vendor, $mac, $bssid, $uuid);
 
 	}
 
-	function registrationNotify($type, $vendor, $mac, $bssid, $uuid, $status) {
+	function registrationNotify($type, $vendor, $mac, $bssid, $uuid) {
 		$topic = "device/registration_notify";
 		//$msg = "{\"type\":\"$type\",\"Vendor\":\"$vendor\",\"MAC\":\"$mac\",\"BSSID\":\"$bssid\",\"UUID\":\"$uuid\",\"status\":\"$status\"}";
 		//$msg = "{\"MAC\":\"$mac\",\"action\":\"1\",\"value\":\"1\"}";

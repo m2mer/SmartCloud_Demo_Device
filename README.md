@@ -31,3 +31,17 @@ TABLE `Lamp_status`(<br>
 | device/status_update | {<br>"UUID":"2c3ae82205b1"<br>"attribute":online",<br>"value":"1"<br>}<br>{<br>"UUID":"2c3ae82205b1"<br>"attribute":"onoff",<br>"value":"1"<br>}<br>{<br>"UUID":"2c3ae82205b1"<br>"attribute":"lightness",<br>:"value":50"<br>} <br> {<br>"UUID":"2c3ae82205b1"<br>"attribute":"color",<br>"value":"200"<br>} <br> {<br>"UUID":"2c3ae82205b1"<br>"attribute":"mode",<br>"value":"0"<br>} | pub: Device <br> sub:Cloud, APP | after device execute operation or device online
 | device/status_notify | {<br>"UUID":"2c3ae82205b1",<br>"online":"1",<br>"onoff":"1",<br>"lightness":"50", <br> "color":"200", <br> mode":"0"<br>}  | pub: Cloud <br> sub: APP | notify all devices one by one after APP open
 | user/user_connect | {<br> "UUID":""<br>} | pub: APP <br> sub: Cloud | when APP open
+
+#test steps:
+0. run mqtt_msg_handler.php to receive mqtt message;
+
+1. use below commands to register and operate a device.
+mosquitto_pub -h "www.futureSmart.top" -t 'device/device_register' -m '{"type":"lamp","vendor":"ht","MAC":"2c3ae82205b1"}'
+mosquitto_pub -h "www.futureSmart.top" -t 'device/status_update' -m '{"UUID":"2c3ae82205b1","attribute":"onoff","value":"1"}'
+
+2. use below command to simulate an APP open;
+mosquitto_pub -h "www.futureSmart.top" -t 'user/user_connect' -m ""
+
+3. access database in each step to check result.
+use db_device;
+select * from Device_info;
