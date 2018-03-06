@@ -1,24 +1,21 @@
 Device manipulation for SmartCloud Demo
 
-# test steps:
-0. run mqtt_msg_handler.php to receive mqtt message;
+## Test steps:
+0.run mqtt_msg_handler.php to receive mqtt message;  
 
-1. use below commands to register and operate a device.
-
-mosquitto_pub -h "www.futureSmart.top" -t 'device/device_register' -m '{"type":"lamp","vendor":"ht","MAC":"2c3ae82205b1"}'
-
+1.use below commands to register and operate a device.  
+mosquitto_pub -h "www.futureSmart.top" -t 'device/device_register' -m '{"type":"lamp","vendor":"ht","MAC":"2c3ae82205b1"}'  
 mosquitto_pub -h "www.futureSmart.top" -t 'device/status_update' -m '{"UUID":"2c3ae82205b1","attribute":"onoff","value":"1"}'
 
-2. use below command to simulate an APP open;
-
+2.use below command to simulate an APP open;  
 mosquitto_pub -h "www.futureSmart.top" -t 'user/user_connect' -m ""
 
-3. access database in each step to check result.
-
+3.access database in each step to check result.  
 use db_device;  
-select * from Device_info;
+select * from Device_info;  
+select * from Lamp_status;
 
-# database
+## Database
 TABLE `Device_info`(<br>
 &emsp;`id` int(8) unsigned NOT NULL AUTO_INCREMENT,<br>
 &emsp;`type` varchar(255) NOT NULL COMMENT 'type',<br>
@@ -39,7 +36,7 @@ TABLE `Lamp_status`(<br>
 &emsp;PRIMARY KEY (`UUID`)<br>
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ;
 
-# mqtt protocol
+## MQTT protocol
 | Topic | Message | Direction | Note 
 | - | :- | :- | - 
 | device/device_register |{<br>"type":"lamp",<br>"vendor":"ht",<br>"MAC":"2c3ae82205b1"<br>}| pub: Device <br> sub: Cloud | esp8266 payload length limit
