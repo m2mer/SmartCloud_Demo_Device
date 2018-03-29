@@ -8,6 +8,6 @@
     },
     "payload": {
         "groupId": "1",
-        "groupName":"testGroupName",
+        "groupName":"testGroupName"
     }
 }
