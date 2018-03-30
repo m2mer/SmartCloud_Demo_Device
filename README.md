@@ -39,10 +39,10 @@ TABLE `Lamp_status`(<br>
 ## MQTT protocol
 | Topic | Message | Direction | Note 
 | - | :- | :- | - 
-| device/device_register |{<br>"type":"lamp",<br>"vendor":"ht",<br>"MAC":"2c3ae82205b1"<br>}| pub: Device <br> sub: Cloud | esp8266 payload length limit
+| device/device_register |{<br>"BSSID"："323besfe", </br>"UUID":"2c3ae82205b1", </br>type":"lamp",<br>"vendor":"ht",<br>"MAC":"2c3ae82205b1"<br>}| pub: Device <br> sub: Cloud | esp8266 payload length limit， **BSSID and UUID is important** |
 | device/registration_notify | {<br>"UUID":"2c3ae82205b1"<br>} | pub: cloud <br> sub: APP | UUID use MAC for now
 | device/device_operate | {<br>"UUID":"2c3ae82205b1"<br>"action":"onoff"<br>"value":"1"<br>} | pub: APP <br> sub: Device |
-| device/status_update | {<br>"UUID":"2c3ae82205b1"<br>"attribute":online",<br>"value":"1"<br>}<br>{<br>"UUID":"2c3ae82205b1"<br>"attribute":"onoff",<br>"value":"1"<br>}<br>{<br>"UUID":"2c3ae82205b1"<br>"attribute":"lightness",<br>:"value":50"<br>} <br> {<br>"UUID":"2c3ae82205b1"<br>"attribute":"color",<br>"value":"200"<br>} <br> {<br>"UUID":"2c3ae82205b1"<br>"attribute":"mode",<br>"value":"0"<br>} | pub: Device <br> sub:Cloud, APP | after device execute operation or device online
-| device/status_notify | {<br>"UUID":"2c3ae82205b1",<br>"online":"1",<br>"onoff":"1",<br>"lightness":"50", <br> "color":"200", <br> mode":"0"<br>}  | pub: Cloud <br> sub: APP | notify all devices one by one after APP open
-| user/user_connect | {<br> "UUID":""<br>} | pub: APP <br> sub: Cloud | when APP open
+| device/status_update | {<br>"UUID":"2c3ae82205b1"<br>"attribute":online",<br>"value":"1"<br>}<br>{<br>"UUID":"2c3ae82205b1"<br>"attribute":"onoff",<br>"value":"1"<br>}<br>{<br>"UUID":"2c3ae82205b1"<br>"attribute":"lightness",<br>:"value":50"<br>} <br> {<br>"UUID":"2c3ae82205b1"<br>"attribute":"color",<br>"value":"200"<br>} <br> {<br>"UUID":"2c3ae82205b1"<br>"attribute":"mode",<br>"value":"0"<br>} | pub: Device <br> sub:Cloud, APP | after device execute operation or device online **UUID is unique id for Device, same value with device MAC** |
+| device/status_notify | {<br>"UUID":"2c3ae82205b1",<br>"online":"1",<br>"onoff":"1",<br>"lightness":"50", <br> "color":"200", <br> mode":"0"<br>}  | pub: Cloud <br> sub: APP | notify all devices one by one after APP open, **UUID is device unique ID, smame value with device MAC** |
+| user/user_connect | {<br> "BSSID":"323besfe", </br>UUID":"efdse238osdj23938"<br>} | pub: APP <br> sub: Cloud | when APP open, **UUID is user phone unique ID** |
 
