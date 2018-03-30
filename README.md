@@ -39,7 +39,7 @@ TABLE `Lamp_status`(<br>
 ## MQTT protocol
 | Topic | Message | Direction | Note 
 | - | :- | :- | - 
-| device/device_register |{<br>"BSSID"："323besfe", </br>"UUID":"2c3ae82205b1", </br>type":"lamp",<br>"vendor":"ht",<br>"MAC":"2c3ae82205b1"<br>}| pub: Device <br> sub: Cloud | esp8266 payload length limit， **BSSID and UUID is important** |
+| device/device_register |{<br>"BSSID"："323besfe", </br>"UUID":"2c3ae82205b1", </br>"type":"lamp",<br>"vendor":"ht",<br>"MAC":"2c3ae82205b1"<br>}| pub: Device <br> sub: Cloud | esp8266 payload length limit， **BSSID and UUID is important** |
 | device/registration_notify | {<br>"UUID":"2c3ae82205b1"<br>} | pub: cloud <br> sub: APP | UUID use MAC for now
 | ***device/device_operate*** | {<br>"UUID":"2c3ae82205b1"<br>"action":"onoff"<br>"value":"1"<br>} | pub: APP <br> sub: Device | turn on/off light |
 | ***device/device_operate*** | {</br> "UUID":"2c3ae82205b1",</br> "action":"lightness",</br>"value":"2"</br>} | | lightness operate	|
