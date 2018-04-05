@@ -37,12 +37,15 @@ TABLE `Lamp_status`(<br>
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ;
 
 ## MQTT protocol
-| Topic | Message | Direction | Note 
-| - | :- | :- | - 
-| device/device_register |{<br>"type":"lamp",<br>"vendor":"ht",<br>"MAC":"2c3ae82205b1"<br>}| pub: Device <br> sub: Cloud | esp8266 payload length limit
-| device/registration_notify | {<br>"UUID":"2c3ae82205b1"<br>} | pub: cloud <br> sub: APP | UUID use MAC for now
-| device/device_operate | {<br>"UUID":"2c3ae82205b1"<br>"action":"onoff"<br>"value":"1"<br>} | pub: APP <br> sub: Device |
-| device/status_update | {<br>"UUID":"2c3ae82205b1"<br>"attribute":online",<br>"value":"1"<br>}<br>{<br>"UUID":"2c3ae82205b1"<br>"attribute":"onoff",<br>"value":"1"<br>}<br>{<br>"UUID":"2c3ae82205b1"<br>"attribute":"lightness",<br>:"value":50"<br>} <br> {<br>"UUID":"2c3ae82205b1"<br>"attribute":"color",<br>"value":"200"<br>} <br> {<br>"UUID":"2c3ae82205b1"<br>"attribute":"mode",<br>"value":"0"<br>} | pub: Device <br> sub:Cloud, APP | after device execute operation or device online
-| device/status_notify | {<br>"UUID":"2c3ae82205b1",<br>"online":"1",<br>"onoff":"1",<br>"lightness":"50", <br> "color":"200", <br> mode":"0"<br>}  | pub: Cloud <br> sub: APP | notify all devices one by one after APP open
-| user/user_connect | {<br> "UUID":""<br>} | pub: APP <br> sub: Cloud | when APP open
+Note: data in table are for reference
 
+| Topic | Message | Direction | Version | Note 
+| - | :- | :- | - | - |
+| device/device_register |{<br>"type":"lamp",<br>"vendor":"ht",<br>"MAC":"2c3ae82205b1"<br>}| pub: Device <br> sub: Cloud | v1.0, v1.1 | esp8266 payload length limit
+| device/registration_notify | {<br>"UUID":"2c3ae82205b1"<br>} | pub: cloud <br> sub: APP | v1.0, v1.1 | UUID use MAC for now
+| device/device_operate | {<br>"UUID":"2c3ae82205b1"<br>"action":"onoff"<br>"value":"1"<br>} | pub: APP <br> sub: Device | v1.0, v1.1 | 
+| device/status_update | {<br>"UUID":"2c3ae82205b1"<br>"attribute":online",<br>"value":"1"<br>}<br>{<br>"UUID":"2c3ae82205b1"<br>"attribute":"onoff",<br>"value":"1"<br>}<br>{<br>"UUID":"2c3ae82205b1"<br>"attribute":"lightness",<br>:"value":50"<br>} <br> {<br>"UUID":"2c3ae82205b1"<br>"attribute":"color",<br>"value":<br>{"h":300,"s":100,"v":80}<br>} <br> {<br>"UUID":"2c3ae82205b1"<br>"attribute":"mode",<br>"value":"0"<br>} | pub: Device <br> sub:Cloud, APP | v1.0, v1.1 | after device execute operation or device online | 
+| device/status_notify | {<br>"UUID":"2c3ae82205b1",<br>"online":"1",<br>"onoff":"1",<br>"lightness":"50", <br> "color":"200", <br> mode":"0"<br>}  | pub: Cloud <br> sub: APP | v1.0 | notify all devices one by one after APP open<br>(deprecated in v1.1, use https)
+| user/user_connect | {<br> "UUID":""<br>} | pub: APP <br> sub: Cloud | v1.0 | when APP open<br>(deprecated in v1.1, use https)
+| device/get_status | {<br>"UUID":"2c3ae82205b1"<br>"action":"get_status"<br>} | pub: APP <br> sub: Device | v1.1 | APP want to get overall status of device
+| device/status_reply | {<br>"UUID":"2c3ae82205b1", <br>"onoff":1,<br>"lightness":80,<br>"temperature":3000,<br>"color":{"h":300,"s":100,"v":80},<br>"mode":"Reading",<br>"timer_on":0,<br>"timer_off":0 <br>} | pub: Device <br> sub:Cloud, APP | v1.1 | overall status 
