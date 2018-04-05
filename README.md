@@ -49,3 +49,4 @@ Note: data in table are for reference
 | user/user_connect | {<br> "UUID":""<br>} | pub: APP <br> sub: Cloud | v1.0 | when APP open<br>(deprecated in v1.1, use https)
 | device/get_status | {<br>"UUID":"2c3ae82205b1"<br>"action":"get_status"<br>} | pub: APP <br> sub: Device | v1.1 | APP want to get overall status of device
 | device/status_reply | {<br>"UUID":"2c3ae82205b1", <br>"onoff":1,<br>"lightness":80,<br>"temperature":3000,<br>"color":{"h":300,"s":100,"v":80},<br>"mode":"Reading",<br>"timer_on":0,<br>"timer_off":0 <br>} | pub: Device <br> sub:Cloud, APP | v1.1 | overall status 
+| device/update_brief | {<br>"UUID":"2c3ae82205b1", <br>"onoff":1,<br>"lightness":80,<br>"temperature":3000,<br>"mode":"Reading",<br>"online":1 <br>} | pub: Device <br> sub:Cloud, APP | v1.1 | device notify brief status every second
