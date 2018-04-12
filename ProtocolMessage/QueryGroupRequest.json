@@ -1,0 +1,22 @@
+{
+    "header": {
+        "namespace": "FutureSmart.Light.Query",
+        "name": "QueryLightGroup",
+        "userId": "1bd5d003",
+        "username": "testName",
+        "phone": "18923654231"
+    },
+    "payload": {
+        "groups": [
+            {
+                "groupId": "2c3ae82205b1",
+                "groupName": "testDeviceName",
+                "groupType": "Light",
+                "attribute": [
+                    "onoff",
+                    "lightness"
+                ]
+            }
+        ]
+    }
+}

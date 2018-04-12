@@ -37,6 +37,7 @@ TABLE `Lamp_status`(<br>
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ;
 
 ## MQTT protocol
+
 Note: data in table are for reference
 
 | Topic | Message | Direction | Version | Note 

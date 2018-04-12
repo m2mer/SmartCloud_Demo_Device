@@ -1,0 +1,32 @@
+{
+    "header": {
+        "namespace": "FutureSmart.Light.Control",
+        "name": "ControlLightGroup",
+        "userId": "1bd5d003",
+        "username": "testName",
+        "phone": "18923654231"
+    },
+    "payload": {
+        "groups": [
+            {
+                "groupId": "2c3ae82205b1",
+                "groupName": "testDeviceName",
+                "groupType": "Light",
+                "action": [
+                    {
+                        "name": "on",
+                        "value": "1"
+                    },
+                    {
+                        "name": "lightness",
+                        "value": "110"
+                    },
+                    {
+                        "name": "color",
+                        "value": "100, 20, 130"
+                    }
+                ]
+            }
+        ]
+    }
+}

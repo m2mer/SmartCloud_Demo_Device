@@ -1,0 +1,34 @@
+{
+    "header": {
+        "namespace": "FutureSmart.Light.Control",
+        "name": "ControlLight",
+        "userId": "1bd5d003",
+        "username": "testName",
+        "phone": "18923654231"
+    },
+    "payload": {
+        "UUID": "2c3ae82205b1",
+        "deviceName": "testDeviceName",
+        "deviceType": "Light",
+        "attribute":[
+          {
+            "name": "zone",
+            "value": "Kitchen"
+          }
+        ], 
+        "action": [
+            {
+                "name": "on",
+                "value": "1"
+            },
+            {
+                "name": "lightness",
+                "value": "110"
+            },
+            {
+                "name": "color",
+                "value": "100, 20, 130"
+            }
+        ]
+    }
+}

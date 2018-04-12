@@ -1,0 +1,25 @@
+{
+    "header": {
+        "namespace": "FutureSmart.Light.Rule",
+        "name": "RuleLightGroup",
+        "userId": "1bd5d003",
+        "username": "testName",
+        "phone": "18923654231"
+    },
+    "payload": {
+        "rules": [
+            {
+                "groupId": "234bece",
+                "ruleId": "def3fd",
+                "ruleName": "testRuleName",
+                "ruleType": "testRuleType"
+            },
+            {
+                "groupId": "bef9893d",
+                "ruleId": "def3fd",
+                "ruleName": "testRuleName",
+                "ruleType": "testRuleType"
+            }
+        ]
+    }
+}

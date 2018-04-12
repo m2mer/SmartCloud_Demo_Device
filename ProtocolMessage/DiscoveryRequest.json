@@ -1,0 +1,13 @@
+{
+    "header": {
+        "namespace": "FutureSmart.Light.Discovery",
+        "name": "DiscoveryLight",
+        "userId": "1bd5d003",
+        "username": "testName",
+        "phone": "18923654231"
+    },
+    "payload": {
+        "groupId": "1",
+        "groupName":"testGroupName"
+    }
+}

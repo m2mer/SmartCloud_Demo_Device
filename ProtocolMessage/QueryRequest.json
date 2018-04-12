@@ -1,0 +1,18 @@
+{
+  "header":{
+      "namespace":"FutureSmart.Light.Query",
+      "name":"QueryLight",
+      "userId": "1bd5d003",
+      "username": "testName",
+      "phone": "18923654231"
+   },
+   "payload":{
+       "UUID":"2c3ae82205b1",
+       "deviceName": "testDeviceName",
+       "deviceType":"Light",
+       "attribute":[
+              "onoff",
+              "lightness"
+      ]
+    }
+}
