@@ -51,7 +51,7 @@ Note: data in table are for reference
 
 |ID| Topic | Message | Direction | Version | Note 
 |-| - | :- | :- | - | - |
-|1| device/device_register |{<br>"BSSID"："323besfe", </br>"UUID":"2c3ae82205b1", </br>"type":"lamp",<br>"vendor":"ht",<br>"MAC":"2c3ae82205b1"<br>}| pub: Device <br> sub: Cloud |  v1.0, v1.1 |esp8266 payload length limit， **BSSID and UUID is important** |
+|1| device/device_register |{<br>"BSSID"："323besfe",</br>"type":"lamp",<br>"vendor":"ht",<br>"MAC":"2c3ae82205b1"<br>}| pub: Device <br> sub: Cloud |  v1.0, v1.1 |esp8266 payload length limit， **BSSID and UUID is important** |
 |2| device/registration_notify | {<br>"UUID":"2c3ae82205b1"<br>} | pub: cloud <br> sub: APP | v1.0, v1.1 | UUID use MAC for now
 |3| ***device/device_operate*** | {<br>"UUID":"2c3ae82205b1"<br>"action":"onoff"<br>"value":"1"<br>} | pub: APP <br> sub: Device | v1.0, v1.1 | 
 |4| ***device/device_operate*** | {</br> "UUID":"2c3ae82205b1",</br> "action":"lightness",</br>"value":"2"</br>} | | v1.0, v1.1 | lightness operate	|
