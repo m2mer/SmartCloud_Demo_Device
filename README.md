@@ -244,3 +244,128 @@ Note: data in table are for reference
     }
 }
 ```
+
+### Query
+
+* Request
+
+```json
+{
+  "header":{
+      "namespace":"FutureSmart.Light.Query",
+      "name":"QueryLight",
+      "userId": "1bd5d003",
+      "username": "testName",
+      "phone": "18923654231"
+   },
+   "payload":{
+       "UUID":"2c3ae82205b1",
+       "deviceName": "testDeviceName",
+       "deviceType":"Light",
+       "attribute":[
+              "onoff",
+              "lightness"
+      ]
+    }
+}
+
+```
+
+* Response
+
+```json
+{
+  "header":{
+      "namespace":"FutureSmart.Light.Query",
+      "name":"QueryLightResponse",
+      "userId": "1bd5d003",
+      "username": "testName",
+      "phone": "18923654231"
+   },
+   "payload":{
+       "UUID":"2c3ae82205b1",
+       "deviceName": "testDeviceName",
+       "deviceType":"Light",
+       "attribute":[
+             {
+              "name": "onoff",
+              "value": "1"
+             },
+             {
+              "name": "lightness",
+              "value": "120"
+             }
+      ]
+    }
+}
+
+```
+
+### Group Query
+
+* Request
+
+```json
+{
+    "header": {
+        "namespace": "FutureSmart.Light.Query",
+        "name": "QueryLightGroup",
+        "userId": "1bd5d003",
+        "username": "testName",
+        "phone": "18923654231"
+    },
+    "payload": {
+        "groups": [
+            {
+                "groupId": "2c3ae82205b1",
+                "groupName": "testDeviceName",
+                "groupType": "Light",
+                "attribute": [
+                    "onoff",
+                    "lightness"
+                ]
+            }
+        ]
+    }
+}
+```
+
+* Response
+
+```json
+{
+    "header": {
+        "namespace": "FutureSmart.Light.Query",
+        "name": "QueryLightGroupResponse",
+        "userId": "1bd5d003",
+        "username": "testName",
+        "phone": "18923654231"
+    },
+    "payload": {
+        "groups": [
+            {
+                "groupId": "2c3ae82205b1",
+                "groupName": "testDeviceName",
+                "groupType": "Light",
+                "devices": [
+                    {
+                        "UUID": "2c3ae82205b1",
+                        "deviceName": "testDeviceName",
+                        "deviceType": "Light",
+                        "attribute": [
+                            {
+                                "name": "onoff",
+                                "value": "1"
+                            },
+                            {
+                                "name": "lightness",
+                                "value": "120"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
