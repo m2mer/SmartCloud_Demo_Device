@@ -4,7 +4,7 @@ Note: data in table are for reference
 
 | Topic | Message | Direction | Binary | Note 
 | - | - | - | :- | - |
-| device/deviceId/device_register | Gateway:<br> {"type":"00010000", "Vendor":"AISmart", "MAC":"18fe34d4795e", "meshId":"f2140d51ffff"}<br> Node:<br> {"type":"00020003", "Vendor":"AISmart", "MAC":"3400ce0daf75ffff",  "gatewayId":"2c3ae82205b1"}| pub: Gateway <br> sub: Cloud | NA |
+| device/deviceId/device_register | Gateway:<br> {"type":"00010000", "Vendor":"AISmart", "MAC":"18fe34d4795e", "BSSID":"F0:B4:29:82:96:74", "meshId":"f2140d51ffff"}<br> Node:<br> {"type":"00020003", "Vendor":"AISmart", "MAC":"3400ce0daf75ffff",  "gatewayId":"2c3ae82205b1"}| pub: Gateway <br> sub: Cloud | NA |
 | device/deviceId/device_deleted | {"UUID":"f2140d51ffff"} | pub: Gateway <br> sub: Cloud | NA | mesh node deleted notify
 | device/deviceId/reset_factory | {"UUID":"f2140d51ffff"} | pub: Gateway <br> sub: APP, Cloud | NA | Gateway/mesh node reset factory notify
 | device/deviceId/heartbeat | {"UUID":"18fe34d4795e"} | pub: Gateway <br> sub: APP, Cloud | NA | heartbeat of Gateway
