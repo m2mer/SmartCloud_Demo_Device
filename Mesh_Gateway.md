@@ -2,10 +2,12 @@
 # mesh agent message
 Note: data in table are for reference
 
+
 | Topic | Message | Direction | Binary | Note 
 | - | - | - | :- | - |
 | device/deviceId/device_register | Gateway:<br> {"type":"00010000", "vendor":"AISmart", <br>"MAC":"18fe34d4795e", "BSSID":"F0:B4:29:82:96:74", <br>"meshId":"f2140d51ffff"}<br> Node:<br> {"type":"00020003", "vendor":"AISmart",<br> "MAC":"3400ce0daf75ffff",  "gatewayId":"2c3ae82205b1"}| pub: Gateway <br> sub: Cloud | NA |
 | device/deviceId/state_notify | {"UUID":"f2140d51ffff",<br> "attribute":"device_deleted"} <br> {"UUID":"f2140d51ffff",<br> "attribute":"hardware_reset"} <br> {"UUID":"f2140d51ffff",<br> "attribute":"heartbeat"}| pub: Gateway <br> sub: APP, Cloud | NA | Gateway/mesh node deleted notify,<br> Gateway/mesh node hardware_reset notify, <br>heartbeat of Gateway
+| device/userId/app_notify | {<br>"userId":"xxxxxxx",<br>"attribute":"login"<br> } <br> {<br>"userId":"xxxxxxx",<br>"attribute":"logout"<br> }|pub:APP<br> sub: Gateway, Cloud | NA | used to notify Gateway and Cloud to change heartbeat interval
 | device/deviceId/get_status | {<br>"UUID":"18fe34d4795e",<br>"attribute":"mesh_agent",<br>"value":"3400ce0daf75ffff"<br>}| pub: APP <br> sub: Gateway | struct {<br>  &nbsp;uint8_t command; <br>&nbsp; uint8_t reserved; <br>&nbsp; uint8_t mac[6]; <br> } |
 | device/deviceId/status_reply | {<br>"UUID":"18fe34d4795e",<br>"attribute":"mesh_agent",<br>"value":"3800ce0daf75ffff<br>00020001640007d0012c646400000000"<br>}| pub: Gateway <br> sub: APP, cloud | struct {<br>  &nbsp;uint8_t command; <br>&nbsp; uint8_t sequence; <br>&nbsp; uint8_t mac[6]; <br>&nbsp; uint8_t firstType; <br>&nbsp; uint8_t secondType; <br>&nbsp; uint8_t group; <br>&nbsp; uint8_t onoff; <br>&nbsp; uint8_t lightness; <br>&nbsp; uint8_t mode; <br>&nbsp; uint16_t temperature; <br>&nbsp; uint16_t h; <br>&nbsp; uint16_t s; <br>&nbsp; uint16_t v; <br> } |
 | device/deviceId/device_operate | {<br>"UUID":"18fe34d4795e",<br>"attribute":"mesh_agent",<br>"value":"3200ce0daf75ffff000100000000"<br>}| pub: APP <br> sub: Gateway | struct {<br>  &nbsp;uint8_t command; <br>&nbsp; uint8_t reserved; <br>&nbsp; uint8_t mac[6]; <br>&nbsp; uint8_t funcType; <br>&nbsp; uint8_t funcPara[5]; <br> } |
