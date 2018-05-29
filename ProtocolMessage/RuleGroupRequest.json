@@ -2,9 +2,7 @@
     "header": {
         "namespace": "FutureSmart.Light.Rule",
         "name": "RuleLightGroup",
-        "userId": "1bd5d003",
-        "username": "testName",
-        "phone": "18923654231"
+        "userId": "1bd5d003"
     },
     "payload": {
         "rules": [
