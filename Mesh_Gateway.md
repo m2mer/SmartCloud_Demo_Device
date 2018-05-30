@@ -5,7 +5,7 @@ Note: data in table are for reference
 
 | Topic | Message | Direction | Binary | Note 
 | - | - | - | :- | - |
-| device/deviceId/device_register | Gateway:<br> {"type":"00010000", "vendor":"AISmart", <br>"MAC":"18fe34d4795e", "BSSID":"F0:B4:29:82:96:74", <br>"meshId":"f2140d51ffff"}<br> Node:<br> {"type":"00020003", "vendor":"AISmart",<br> "MAC":"3400ce0daf75ffff",  "gatewayId":"2c3ae82205b1"}| pub: Gateway <br> sub: Cloud | NA |
+| device/deviceId/device_register | Gateway:<br> {"type":"00010000", "vendor":"AISmart", <br>"MAC":"18fe34d4795e", "BSSID":"F0:B4:29:82:96:74", <br>"meshId":"f2140d51ffff"}<br> Node:<br> {"type":"00020003", "vendor":"AISmart",<br> "MAC":"3400ce0daf75ffff",  "gatewayId":"2c3ae82205b1", "devAddr":"0001"}| pub: Gateway <br> sub: Cloud | NA |
 | device/deviceId/state_notify | {"UUID":"f2140d51ffff",<br> "attribute":"device_deleted"} <br> {"UUID":"f2140d51ffff",<br> "attribute":"hardware_reset"} <br> {"UUID":"f2140d51ffff",<br> "attribute":"heartbeat"}| pub: Gateway <br> sub: APP, Cloud | NA | Gateway/mesh node deleted notify,<br> Gateway/mesh node hardware_reset notify, <br>heartbeat of Gateway
 | device/userId/app_notify | {<br>"userId":"xxxxxxx",<br>"hbIntvl":"1000"<br> } |pub:Cloud <br> sub: Gateway | NA | used to notify Gateway change heartbeat  interval when APP login/logout
 | device/deviceId/get_status | {<br>"UUID":"18fe34d4795e",<br>"attribute":"mesh_agent",<br>"value":"3400ce0daf75ffff"<br>}| pub: APP <br> sub: Gateway | struct {<br>  &nbsp;uint8_t command; <br>&nbsp; uint8_t reserved; <br>&nbsp; uint8_t mac[6]; <br> } |
