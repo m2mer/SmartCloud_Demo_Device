@@ -1,41 +1,36 @@
 {
-    "header": {
-        "namespace": "FutureSmart.Light.Discovery",
-        "name": "DiscoveryLightResponse",
-        "userId": "1bd5d003"
-    },
-    "payload": {
-        "devices": [{
-            "UUID": "2c3ae82205b1",
-            "deviceName": "light",
-            "deviceType": "light",
-            "groupId": "1",
-            "groupName": "testGroupName",
-            "groupType": "testGroupType",
-            "zone": "Bedroom",
-            "vendor": "heelight",
-            "icon": "https://www.futuresmart.top/static/deviceIcon/light.png",
-            "attribute":[
-                "onoff",
-                "lightness",
-                "temperature",
-                "color",
-                "mode",
-                "timer",
-                "online"
-            ],
-            "actions": [
-                "On",
-                "Off",
-                "lightness",
-                "color",
-                "mode",
-                "timer"
-            ],
-            "extensions": {
-                "extension1": "",
-                "extension2": ""
-            }
-        }]
-    }
+  "header": {
+    "namespace": "FutureSmart.Light.Discovery",
+    "name": "DiscoveryLightResponse",
+    "userId": "1bd5d003"
+  },
+  "payload": {
+    "devices": [
+      {
+        "UUID": "2c3ae82205b1",
+        "deviceName": "light",
+        "deviceType": "light",
+        "groupId": "1",
+        "groupName": "testGroupName",
+        "groupType": "testGroupType",
+        "zone": "Bedroom",
+        "vendor": "heelight",
+        "icon": "https://www.futuresmart.top/static/deviceIcon/light.png",
+        "attribute": [
+          {
+            "name": "onoff",
+            "value": "1"
+          },
+          {
+            "name": "lightness",
+            "value": "397"
+          },
+          {
+            "name": "color",
+            "value": "100,80, 40"
+          }
+        ]
+      }
+    ]
+  }
 }
