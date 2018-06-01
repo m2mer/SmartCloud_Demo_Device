@@ -18,9 +18,9 @@
         "icon": "https://www.futuresmart.top/static/deviceIcon/light.png",
         "attribute": {
           "onoff": "1",
-          "lightness": "397",
+          "temperature":"30",
           "color": "100,20,60",
-          "temp": "30",
+          "lightness": "397",
           "zone": "厨房"
         }
       }
