@@ -16,28 +16,13 @@
         "zone": "Bedroom",
         "vendor": "heelight",
         "icon": "https://www.futuresmart.top/static/deviceIcon/light.png",
-        "attribute": [
-          {
-            "name": "onoff",
-            "value": "1"
-          },
-          {
-            "name": "lightness",
-            "value": "397"
-          },
-          {
-            "name": "color",
-            "value": "100,80,40"
-          },
-          {
-            "name": "temp",
-            "value": "30"
-          },
-          {
-            "name":"zone",
-            "value":"客厅"
-          }
-        ]
+        "attribute": {
+          "onoff": "1",
+          "lightness": "397",
+          "color": "100,20,60",
+          "temp": "30",
+          "zone": "厨房"
+        }
       }
     ]
   }
