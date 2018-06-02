@@ -1,8 +1,8 @@
 {
     "header": {
-        "namespace": "FutureSmart.Light.Discovery",
-        "name": "MoidfyGroup",
-        "userId": "1bd5d003"
+        "namespace": "FutureSmart.Light.Group",
+        "name": "MoidfyLightGroup",
+        "userId": "6"
     },
     "payload": {
         "groups": [{

@@ -1,7 +1,7 @@
 {
     "header": {
-        "namespace": "FutureSmart.Light.Discovery",
-        "name": "AddGroupResponse",
-        "userId": "1bd5d003"
+        "namespace": "FutureSmart.Light.Group",
+        "name": "AddLightGroupResponse",
+        "userId": "6"
     }
 }

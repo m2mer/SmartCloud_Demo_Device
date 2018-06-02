@@ -1,8 +1,8 @@
 {
   "header": {
-    "namespace": "FutureSmart.Light.Discovery",
-    "name": "DiscoveryGroupResponse",
-    "userId": "1bd5d003"
+    "namespace": "FutureSmart.Light.Group",
+    "name": "DiscoveryLightGroupResponse",
+    "userId": "6"
   },
   "payload": {
     "groups": [
