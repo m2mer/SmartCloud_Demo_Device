@@ -1,0 +1,18 @@
+{
+    "header": {
+        "namespace": "FutureSmart.Light.Group",
+        "name": "AddLightGroup",
+        "userId": "6"
+    },
+    "payload": {
+        "groups": [{
+        		"groupId":"adbdcde",
+                "groupName": "testGroupName"
+        },
+        {
+        	"groupId":"2323dsa",
+        	"groupName" : "test2GroupName"
+        }
+    ]
+    }
+}

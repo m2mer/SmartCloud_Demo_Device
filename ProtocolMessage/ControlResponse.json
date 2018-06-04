@@ -2,9 +2,7 @@
   "header":{
       "namespace":"FutureSmart.Light.Control",
       "name":"ControlLightResponse",
-      "userId": "1bd5d003",
-      "username": "testName",
-      "phone": "18923654231"
+      "userId": "1bd5d003"
    },
    "payload":{
        "UUID":"2c3ae82205b1",

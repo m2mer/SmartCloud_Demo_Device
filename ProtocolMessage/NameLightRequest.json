@@ -1,0 +1,19 @@
+{
+    "header": {
+        "namespace": "FutureSmart.Light.Control",
+        "name": "NameLight",
+        "userId": "6"
+    },
+    "payload": {
+        "names": [
+            {
+                "UUID": "adbdcde",
+                "deviceName": "light1"
+            },
+            {
+                "UUID": "2323dsa",
+                "deviceName": "light2"
+            }
+        ]
+    }
+}
