@@ -5,7 +5,7 @@
         "userId": "6"
     },
     "code": {
-        "errorcode": 0,
+        "errorCode": 0,
         "errorMsg": "success"
     }
 }
