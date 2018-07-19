@@ -1,0 +1,49 @@
+{
+    "header": {
+        "namespace": "FutureSmart.Light.Group",
+        "name": "SetLightScene",
+        "userId": "6"
+    },
+    "payload": {
+    	"sceneId":"1",
+        "sceneName":"全红色",
+        "settings":[
+        {
+            "deviceType":"w",
+            "deviceId":"1",
+            "operationType":"onoff",
+            "value":"1"
+        },
+        {
+            "deviceType":"wc",
+            "deviceId":"2",
+            "operationType":"lightness",
+            "value":"80"
+        },
+        {
+            "deviceType":"wc",
+            "deviceId":"3",
+            "operationType":"ct",
+            "value":"3000,80"
+        },        
+        {
+            "deviceType":"rgb",
+            "deviceId":"4",
+            "operationType":"color",
+            "value":"300,100,80"
+        }, 
+        {
+            "deviceType":"rgbw",
+            "deviceId":"5",
+            "operationType":"color",
+            "value":"0,0,80"
+        },    
+        {
+            "deviceType":"group",
+            "groupId":"1",
+            "operationType":"mix",
+            "value":"80,3000,300,100,50"
+        }              
+        ]
+    }
+}

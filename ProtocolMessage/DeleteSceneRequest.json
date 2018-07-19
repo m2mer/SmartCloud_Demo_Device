@@ -1,0 +1,10 @@
+{
+    "header": {
+        "namespace": "FutureSmart.Light.Group",
+        "name": "DeleteLightScene",
+        "userId": "6"
+    },
+    "payload": {
+    	"sceneId":"1"
+    }
+}
