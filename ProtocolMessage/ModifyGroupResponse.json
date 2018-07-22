@@ -3,5 +3,9 @@
         "namespace": "FutureSmart.Light.Group",
         "name": "ModifyLightGroupResponse",
         "userId": "6"
+    },
+    "code": {
+        "errorCode": 0,
+        "errorMsg": "success"
     }
 }

@@ -3,5 +3,10 @@
         "namespace": "FutureSmart.Light.Group",
         "name": "AddLightGroupResponse",
         "userId": "6"
+    },
+        
+    "code": {
+        "errorCode": 0,
+        "errorMsg": "success"
     }
 }

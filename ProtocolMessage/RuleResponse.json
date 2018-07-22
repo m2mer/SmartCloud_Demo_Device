@@ -11,5 +11,9 @@
                 "ruleId": "def3fd"
             }
         ]
+    },
+    "code": {
+        "errorCode": 0,
+        "errorMsg": "success"
     }
 }

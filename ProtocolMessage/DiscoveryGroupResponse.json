@@ -15,5 +15,9 @@
         "groupName": "test2GroupName"
       }
     ]
-  }
+  },
+  "code": {
+        "errorCode": 0,
+        "errorMsg": "success"
+    }
 }

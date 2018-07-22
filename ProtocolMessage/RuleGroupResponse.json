@@ -13,5 +13,9 @@
                 "groupId": "344534def"
             }
         ]
+    },
+    "code": {
+        "errorCode": 0,
+        "errorMsg": "success"
     }
 }

@@ -8,5 +8,9 @@
        "UUID":"2c3ae82205b1",
        "deviceName": "testDeviceName",
        "deviceType":"Light"
+    },
+    "code": {
+        "errorCode": 0,
+        "errorMsg": "success"
     }
 }

@@ -12,5 +12,9 @@
                 "groupType": "Light"
             }
         ]
+    },
+    "code": {
+        "errorCode": 0,
+        "errorMsg": "success"
     }
 }
