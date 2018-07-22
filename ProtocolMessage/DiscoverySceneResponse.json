@@ -1,0 +1,54 @@
+{
+    "header": {
+        "namespace": "FutureSmart.Light.Group",
+        "name": "DiscoveryLightSceneResponse",
+        "userId": "6"
+    },
+    "payload": {
+        "scenes":[
+        {
+            "sceneId":"1",
+            "sceneName":"全红色",
+            "settings":[
+            {
+                    "deviceType":"w",
+                    "deviceId":"1",
+                    "operationType":"onoff",
+                    "value":"1"
+            },
+            {
+                "deviceType":"wc",
+                "deviceId":"2",
+                "operationType":"lightness",
+                "value":"80"
+            },
+            {
+                "deviceType":"wc",
+                "deviceId":"3",
+                "operationType":"ct",
+                "value":"3000,80"
+            },        
+            {
+                "deviceType":"rgb",
+                "deviceId":"4",
+                "operationType":"color",
+                "value":"360,100,80"
+            }              
+            ]
+        },
+        {
+            "sceneId":"2",
+            "sceneName":"全绿色",
+            "settings":[   
+            {
+                "deviceType":"group",
+                "groupId":"1",
+                "operationType":"mix",
+                "value":"80,3000,240,100,50"
+            }              
+            ]
+        }
+        ]
+    }
+
+}
