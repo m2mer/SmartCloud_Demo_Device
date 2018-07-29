@@ -1,0 +1,14 @@
+{
+    "header": {
+        "namespace": "FutureSmart.Light.Group",
+        "name": "AddDeviceRequest",
+        "userId": "6"
+    },
+    "payload": {
+        "deviceAddress":[
+        1,
+        2,
+        3            
+        ]
+    }
+}

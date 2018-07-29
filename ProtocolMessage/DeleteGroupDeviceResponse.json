@@ -1,0 +1,11 @@
+{
+    "header": {
+        "namespace": "FutureSmart.Light.Group",
+        "name": "DeleteGroupDeviceResponse",
+        "userId": "6"
+    },
+    "code": {
+        "errorCode": 0,
+        "errorMsg": "success"
+    }
+}
