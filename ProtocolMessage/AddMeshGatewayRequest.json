@@ -1,0 +1,18 @@
+{
+    "header": {
+        "namespace": "FutureSmart.Light.MeshGateway",
+        "name": "AddMeshGatewayRequest",
+        "userId": "6"
+    },
+    "payload": {
+        "devices":[
+        {
+            "mac":"010203040506",
+            "bssid":"0a0b0c0d0e0f",
+            "name":"主网关",
+            "zone":"house"
+        }
+        ]
+    }
+}
+

@@ -1,0 +1,29 @@
+{
+    "header": {
+        "namespace": "FutureSmart.Light.Light",
+        "name": "AddLightRequest",
+        "userId": "6"
+    },
+    "payload": {
+        "devices":[
+        {
+            "devAdd":1,
+            "devType":"LightRGB",
+            "name":"灯具1",
+            "zone":"default"
+        },
+        {
+            "devAdd":2,
+            "devType":"LightCW",
+            "name":"灯具2",
+            "zone":"default"
+        },
+        {
+            "devAdd":3,
+            "devType":"LightCW",          
+            "name":"灯具3",
+            "zone":"default"
+        }       
+        ]
+    }
+}

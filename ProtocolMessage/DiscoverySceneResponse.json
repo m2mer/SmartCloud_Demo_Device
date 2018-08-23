@@ -1,7 +1,7 @@
 {
     "header": {
-        "namespace": "FutureSmart.Light.Group",
-        "name": "DiscoveryLightSceneResponse",
+        "namespace": "FutureSmart.Light.Scene",
+        "name": "DiscoverySceneResponse",
         "userId": "6"
     },
     "payload": {

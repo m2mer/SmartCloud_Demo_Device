@@ -1,7 +1,7 @@
 {
     "header": {
-        "namespace": "FutureSmart.Light.Group",
-        "name": "DeleteLightSceneResponse",
+        "namespace": "FutureSmart.Light.Scene",
+        "name": "DeleteSceneResponse",
         "userId": "6"
     },
     "code": {

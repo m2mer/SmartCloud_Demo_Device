@@ -1,0 +1,21 @@
+{
+    "header": {
+        "namespace": "FutureSmart.Light.Light",
+        "name": "ModifyLightRequest",
+        "userId": "6"
+    },
+    "payload": {
+        "devices":[
+        {
+            "devAddr":1,
+            "name":"客厅筒灯1",
+            "zone":"livingroom"
+        },
+        {
+            "devAddr":2,
+            "name":"客厅筒灯2",
+            "zone":"livingroom"
+        }
+        ]
+    }
+}

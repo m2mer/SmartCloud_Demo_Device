@@ -1,7 +1,7 @@
 {
     "header": {
         "namespace": "FutureSmart.Light.Group",
-        "name": "ModifyLightGroupResponse",
+        "name": "ModifyGroupResponse",
         "userId": "6"
     },
     "code": {

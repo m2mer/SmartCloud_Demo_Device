@@ -1,0 +1,18 @@
+{
+    "header": {
+        "namespace": "FutureSmart.Light.Scene",
+        "name": "ModifySceneRequest",
+        "userId": "6"
+    },
+    "payload": {
+        "scenes": [{
+        	"sceneId":1,
+                "sceneName":"红色浪漫"
+        },
+        {
+        	"sceneId":2,
+        	"sceneName":"绿色森林"
+        }
+    ]
+    }
+}

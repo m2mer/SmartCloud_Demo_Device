@@ -1,17 +1,17 @@
 {
     "header": {
         "namespace": "FutureSmart.Light.Group",
-        "name": "ModifyLightGroup",
+        "name": "ModifyGroupRequest",
         "userId": "6"
     },
     "payload": {
         "groups": [{
-        		"groupId":"adbdcde",
-                "groupName": "testGroupName"
+        	"groupId":1,
+                "groupName":"客厅筒灯"
         },
         {
-        	"groupId":"2323dsa",
-        	"groupName" : "test2GroupName"
+        	"groupId":2,
+        	"groupName":"卧室床头灯"
         }
     ]
     }

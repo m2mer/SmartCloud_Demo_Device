@@ -1,0 +1,16 @@
+{
+  "header": {
+    "namespace": "FutureSmart.Light.MeshGateway",
+    "name": "DiscoveryMeshGatewayResponse",
+    "userId": "1bd5d003"
+  },
+  "payload": {
+    "devices": [
+        {
+            "uuid":"010203040506",
+            "name":"主网关",
+            "zone":"house"
+        }
+    ]
+  }
+}

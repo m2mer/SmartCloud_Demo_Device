@@ -1,11 +1,7 @@
 {
     "header": {
-        "namespace": "FutureSmart.Light.Group",
-        "name": "DiscoveryLightScene",
+        "namespace": "FutureSmart.Light.Scene",
+        "name": "DiscoverySceneRequest",
         "userId": "6"
-    },
-    "code": {
-        "errorCode": 0,
-        "errorMsg": "success"
-    } 
+    }
 }

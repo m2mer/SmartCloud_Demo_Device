@@ -1,23 +1,18 @@
 {
-  "header": {
-    "namespace": "FutureSmart.Light.Group",
-    "name": "DiscoveryLightGroupResponse",
-    "userId": "6"
-  },
-  "payload": {
-    "groups": [
-      {
-        "groupId": "adbdcde",
-        "groupName": "testGroupName"
-      },
-      {
-        "groupId": "2323dsa",
-        "groupName": "test2GroupName"
-      }
+    "header": {
+        "namespace": "FutureSmart.Light.Group",
+        "name": "DiscoveryGroupRequest",
+        "userId": "6"
+    },
+    "payload": {
+        "groups": [{
+        	"groupId":1,
+                "groupName":"客厅筒灯"
+        },
+        {
+        	"groupId":2,
+        	"groupName":"卧室床头灯"
+        }
     ]
-  },
-  "code": {
-        "errorCode": 0,
-        "errorMsg": "success"
     }
 }

@@ -1,7 +1,7 @@
 {
     "header": {
-        "namespace": "FutureSmart.Light.Group",
-        "name": "SetLightSceneResponse",
+        "namespace": "FutureSmart.Light.Scene",
+        "name": "SetSceneResponse",
         "userId": "6"
     },
     "code": {

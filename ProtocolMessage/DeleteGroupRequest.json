@@ -1,11 +1,11 @@
 {
     "header": {
         "namespace": "FutureSmart.Light.Group",
-        "name": "DeleteDeviceRequest",
+        "name": "DeleteGroupRequest",
         "userId": "6"
     },
     "payload": {
-        "deviceAddress":[
+        "GroupId":[
         1,
         2,
         3            

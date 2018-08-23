@@ -1,10 +1,9 @@
 {
     "header": {
-        "namespace": "FutureSmart.Light.Group",
-        "name": "AddGroupResponse",
+        "namespace": "FutureSmart.Light.Scene",
+        "name": "ModifySceneResponse",
         "userId": "6"
     },
-        
     "code": {
         "errorCode": 0,
         "errorMsg": "success"

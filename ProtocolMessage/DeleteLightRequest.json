@@ -1,7 +1,7 @@
 {
     "header": {
-        "namespace": "FutureSmart.Light.Group",
-        "name": "AddDeviceRequest",
+        "namespace": "FutureSmart.Light.Light",
+        "name": "DeleteLightRequest",
         "userId": "6"
     },
     "payload": {
